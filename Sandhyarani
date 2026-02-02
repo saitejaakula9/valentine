@@ -1,0 +1,13 @@
+<h1>Sandhyarani, will you be my Valentine?</h1>
+<audio id="bgMusic" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_9c2c8c5e1a.mp3?filename=romantic-love-112191.mp3" type="audio/mpeg">
+</audio>
+yesBtn.addEventListener("click", () => {
+  document.getElementById("bgMusic").play();
+
+  zone.style.display = "none";
+  hint.style.display = "none";
+  result.style.display = "block";
+  resizeConfettiCanvas();
+  fullScreenConfetti();
+});
